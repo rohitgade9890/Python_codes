@@ -1,0 +1,186 @@
+Perfect ✅ I’ll make a **full practice set of 50–100 Python questions**, organized by **topics**, ranging from easy to medium difficulty. I’ll list **questions only** so you can solve them step by step.
+
+---
+
+# **Python Practice Questions (Easy → Medium)**
+
+## **1. Arrays / Lists (15 Questions)**
+
+1. Find the missing number in an array of 1…n integers.
+2. Find the duplicate number in an array of 1…n integers.
+3. Move all zeroes to the end of an array.
+4. Merge two sorted arrays without using sort.
+5. Find the second largest element in an array.
+6. Find the majority element (appears more than n/2 times). done
+7. Find the intersection of two arrays.
+8. Find the union of two arrays.
+9. Rotate an array to the right by k steps.
+10. Check if an array is sorted and rotated.
+11. Find the maximum sum of a contiguous subarray (Kadane’s).
+12. Count frequency of elements in an array.
+13. Find the longest consecutive sequence in an unsorted array.
+14. Find all pairs in an array that sum to a target.
+15. Remove duplicates from a sorted array in-place.
+
+---
+
+## **2. Strings (15 Questions)**
+
+16. Reverse a string.
+17. Check if a string is a palindrome.
+18. Count vowels in a string.
+19. Reverse words in a string.
+20. Find the first non-repeating character.
+21. Check if two strings are anagrams.
+22. Find the longest common prefix among strings.
+23. Implement `strStr()` function (find substring index).
+24. Group anagrams from a list of strings.
+25. Check if a string has balanced parentheses.
+26. Count the number of substrings with exactly k distinct characters.
+27. Check if a string can form a palindrome (permutation check).
+28. Encode and decode a string using run-length encoding.
+29. Find all palindromic substrings in a string.
+30. Replace all spaces in a string with `%20`.
+
+---
+
+## **3. Matrices / 2D Arrays (10 Questions)**
+
+31. Rotate a square matrix by 90° clockwise.
+32. Print matrix in spiral order.
+33. Set entire row and column to 0 if an element is 0.
+34. Find the sum of primary and secondary diagonals.
+35. Transpose a matrix.
+36. Find the maximum sum submatrix of size k×k.
+37. Search a 2D matrix (row-wise and column-wise sorted).
+38. Count the number of islands in a 2D grid (1 = land, 0 = water).
+39. Flood fill algorithm on a 2D matrix.
+40. Rotate edges of a matrix clockwise by one.
+
+---
+
+## **4. Linked List / Stacks / Queues (10 Questions)**
+
+41. Reverse a singly linked list.
+42. Detect a cycle in a linked list.
+43. Find the intersection node of two linked lists.
+44. Merge two sorted linked lists.
+45. Remove the N-th node from the end of a linked list.
+46. Implement a stack using a list.
+47. Implement a queue using two stacks.
+48. Evaluate a postfix expression.
+49. Implement a min-stack (stack that returns minimum in O(1)).
+50. Check for balanced parentheses using stack.
+
+---
+
+## **5. Hashing / Sets / Maps (10 Questions)**
+
+51. Two sum problem (return indices).
+52. Subarray sum equals k.
+53. Find duplicates in an array using hashing.
+54. Count frequency of characters in a string.
+55. Longest substring without repeating characters.
+56. Find all pairs with a given difference.
+57. Find intersection of two arrays using sets.
+58. Check if an array contains duplicates within k distance.
+59. Check if a ransom note can be constructed from a magazine.
+60. Find the top K frequent elements in an array.
+
+---
+
+## **6. Misc / Recursion / Math (10 Questions)**
+
+61. Fibonacci series (iterative and recursive).
+62. Factorial of a number (iterative and recursive).
+63. Check if a number is prime.
+64. Print Pascal’s triangle up to n rows.
+65. Power of a number (x^n) using recursion.
+66. Count number of ways to climb n stairs (1 or 2 steps at a time).
+67. Check if a number is a perfect number.
+68. Convert decimal to binary.
+69. Count digits of an integer.
+70. Solve Tower of Hanoi problem for n disks.
+
+Perfect ✅ Let’s extend your **Python practice set from 70 → 100+ questions**, adding **medium-level topics** like sliding window, dynamic programming, backtracking, and basic graphs.
+
+---
+
+# **Python Practice Questions (Medium Level, 100+ Total)**
+
+---
+
+## **7. Sliding Window / Two Pointers (10 Questions)**
+
+71. Find the maximum sum of a subarray of size k.
+72. Longest substring with at most k distinct characters.
+73. Minimum size subarray sum ≥ target.
+74. Longest repeating character replacement (replace ≤ k chars to get repeating substring).
+75. Count all anagrams of a pattern in a string.
+76. Maximum sum of non-overlapping subarrays of size k.
+77. Subarray product less than k.
+78. Find all subarrays with sum = 0.
+79. Longest subarray with equal number of 0s and 1s.
+80. Smallest window in string containing all characters of another string.
+
+---
+
+## **8. Dynamic Programming (10 Questions)**
+
+81. Climbing stairs problem (1 or 2 steps).
+82. Coin change problem (minimum coins to make amount).
+83. 0/1 Knapsack problem.
+84. Maximum sum of non-adjacent elements.
+85. Longest increasing subsequence.
+86. Longest common subsequence between two strings.
+87. Minimum edit distance between two strings.
+88. Maximum product subarray.
+89. Decode ways (number of ways to decode a numeric string).
+90. House robber problem (maximum sum without adjacent houses).
+
+---
+
+## **9. Backtracking / Recursion (10 Questions)**
+
+91. N-Queens problem.
+92. Generate all subsets of a set.
+93. Generate all permutations of a string.
+94. Word search in a 2D board.
+95. Rat in a maze (find all paths).
+96. Sudoku solver.
+97. Partition a string into all palindromic substrings.
+98. Combination sum (find combinations that sum to target).
+99. Letter combinations of a phone number.
+100. Find all paths from source to destination in a graph.
+
+---
+
+## **10. Graphs / BFS / DFS Basics (10 Questions)**
+
+101. Check if a graph is connected.
+102. Find all connected components in an undirected graph.
+103. BFS traversal of a graph.
+104. DFS traversal of a graph.
+105. Detect a cycle in a directed graph.
+106. Detect a cycle in an undirected graph.
+107. Find shortest path in an unweighted graph using BFS.
+108. Count number of islands in a grid.
+109. Flood fill algorithm.
+110. Topological sort of a DAG.
+
+---
+
+## ✅ Summary
+
+* **Arrays / Lists:** 15
+* **Strings:** 15
+* **Matrices / 2D Arrays:** 10
+* **Linked List / Stack / Queue:** 10
+* **Hashing / Sets / Maps:** 10
+* **Recursion / Math:** 10
+* **Sliding Window / Two Pointers:** 10
+* **Dynamic Programming:** 10
+* **Backtracking / Recursion:** 10
+* **Graphs / BFS / DFS:** 10
+
+
