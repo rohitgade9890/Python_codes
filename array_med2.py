@@ -50,3 +50,18 @@ def max_cons_num(arr):
             pos = 1
     return max_no
 print(max_cons_num(arr))
+
+
+#longest subarray with given sum
+arr = [1,2,3,1,1,1,1,4,2,3]
+target=3
+def longest_subarray(arr,target):
+    max_len=0
+    for x in range(len(arr)):
+        current_sum=0
+        for y in range(x,len(arr)):
+            current_sum += arr[y]
+            if current_sum == target:
+                max_len = max(max_len,y-x+1)
+    return max_len
+print(longest_subarray(arr,target))
