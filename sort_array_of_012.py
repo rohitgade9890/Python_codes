@@ -1,4 +1,5 @@
 #sort an array of 0's 1's and 2's
+#bruteforce
 arr=[0,2,2,1,0,0,1,1]
 def sortt(arr):
     cnt0=0
@@ -19,3 +20,5 @@ def sortt(arr):
         arr[z] = 2
     return arr
 print(sortt(arr))
+
+#optimized
