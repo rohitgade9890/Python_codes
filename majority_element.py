@@ -15,7 +15,7 @@ def majority_ele(arr):
 print(majority_ele(arr))
     
 #moore's voting algorithm
-arr = [1, 2, 3, 2, 3, 2, 2]
+arr = [2,2,1,0,0,2,2,2,1,1]
 
 def majority_ele(arr):
     # Step 1: Find candidate
