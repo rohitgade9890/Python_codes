@@ -31,29 +31,33 @@ print(max_subarray_sum(arr))
 
 
 #kadane's algorithm
-arr = [-2, -3, 4, -1, -2, 1, 5, -3]
+arr=[-2,-3,4,-1,-2,1,5,-3]
+def maxSubarraySum(arr):
+    maxx=float('-inf')
+    current_sum=0
+    for x in range(len(arr)):
+        current_sum = current_sum + arr[x]
+        if current_sum > maxx:
+            maxx = current_sum
+        if current_sum < 0:
+            current_sum = 0
+    return maxx
+print(maxSubarraySum(arr))
 
-def max_subarray(arr):
-    max_ending_here = arr[0]
-    max_so_far = arr[0]
-    start = end = s = 0   # s is a temp start index
-
-    for i in range(1, len(arr)):
-        num = arr[i]
-
-        # extend the current subarray or start new one
-        if max_ending_here + num > num:
-            max_ending_here = max_ending_here + num
-        else:
-            max_ending_here = num
-            s = i   # new subarray starts here
-
-        # update global max
-        if max_ending_here > max_so_far:
-            max_so_far = max_ending_here
-            start = s
-            end = i
-
-    return max_so_far, arr[start:end+1]
-
-print(max_subarray(arr))
+print(maxSubarraySum(arr))
+#return array
+arr=[-2,-3,4,-1,-2,1,5,-3]
+def maxSubarraySum(arr):
+    maxx=float('-inf')
+    current_sum=0
+    start=end=s=0
+    for x in range(len(arr)):
+        current_sum = current_sum + arr[x]
+        if current_sum > maxx:
+            start=s
+            end=x
+        if current_sum < 0:
+            current_sum = 0
+            s=x+1
+    return arr[start:end]
+print(maxSubarraySum(arr))
