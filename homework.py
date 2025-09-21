@@ -60,7 +60,7 @@ def two_sum(arr,k):
 print(two_sum(arr,target))
 
 #Remove duplicates from a sorted array in-place.
-arr=[1,3,3,4,5,5,8]
+arr=[1,3,3,4,5,5,8,0]
 def sortt(arr):
     pos=0
     for x in range(1,len(arr)):
