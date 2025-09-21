@@ -48,16 +48,22 @@ print(maxSubarraySum(arr))
 #return array
 arr=[-2,-3,4,-1,-2,1,5,-3]
 def maxSubarraySum(arr):
-    maxx=float('-inf')
-    current_sum=0
-    start=end=s=0
-    for x in range(len(arr)):
-        current_sum = current_sum + arr[x]
-        if current_sum > maxx:
-            start=s
-            end=x
-        if current_sum < 0:
-            current_sum = 0
-            s=x+1
-    return arr[start:end]
+    summ = 0
+    maxx = float('-inf')
+    start = 0
+    ansStart = -1
+    ansEnd = -1
+    for i in range(len(arr)):
+        if summ == 0:
+            start = i      
+            
+        summ += arr[i]
+        if summ > maxx:
+            maxx = summ
+            ansStart = start
+            ansEnd = i
+        if summ < 0:
+            summ = 0
+    return arr[ansStart:ansEnd+1]
+   
 print(maxSubarraySum(arr))
