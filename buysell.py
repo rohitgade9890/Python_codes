@@ -15,5 +15,16 @@ def buysell(arr):
     return ['if you buy stock at {0}$ and sell at {1}$ you will get max_profit of {2}$'.format(arr[but_at],arr[sell_at],max_profit)]
 print(buysell(arr))
 
-                
-
+#optimized
+prices=[7,1,5,3,12,4]     
+def maximumProfit(prices):
+    mini = prices[0]
+    maxProfit = 0
+    
+    for i in range(1,len(prices)):
+        cost = prices[i] - mini
+        maxProfit = max(maxProfit, cost)
+        mini = min(mini, prices[i])
+    
+    return maxProfit
+print(maximumProfit(prices))
