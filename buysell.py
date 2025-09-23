@@ -6,8 +6,8 @@ def buysell(arr):
     sell_at=-1
     for x in range(len(arr)):
         current_profit=0
-        for y in range(x,len(arr)):
-            current_profit = arr[x] - arr[y]
+        for y in range(x+1,len(arr)):
+            current_profit = arr[y] - arr[x]
             if current_profit > max_profit:
                 max_profit=current_profit
                 but_at=x
