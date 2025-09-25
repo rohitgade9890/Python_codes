@@ -16,15 +16,28 @@ def buysell(arr):
 print(buysell(arr))
 
 #optimized
-prices=[7,1,5,3,12,4]     
-def maximumProfit(prices):
-    mini = prices[0]
-    maxProfit = 0
+arr=[7,1,5,3,12,4]
+
+def buysell(arr):
+    max_profit=0
+    mini=arr[0]
+    for x in range(1,len(arr)):
+        cost=arr[x]-mini
+        max_profit=max(max_profit,cost)
+        mini=min(mini,arr[x])
+    return max_profit
+print(buysell(arr))
+
+#best time to buy and sell stocks
+arr = [8, 2, 5, 3, 1, 9]
+
+def max_profit(prices):
+    max_profit = 0
+    min_price = prices[0]
+    for price in prices[1:]:
+        profit = price - min_price
+        max_profit = max(max_profit, profit)
+        min_price = min(min_price, price)
+    return max_profit
     
-    for i in range(1,len(prices)):
-        cost = prices[i] - mini
-        maxProfit = max(maxProfit, cost)
-        mini = min(mini, prices[i])
-    
-    return maxProfit
-print(maximumProfit(prices))
+print(max_profit(arr))

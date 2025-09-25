@@ -83,3 +83,28 @@ def cnt_substring(s,s1):
             cnt += 1
     return cnt
 print(cnt_substring(string,substring))
+
+
+#Find Missing Number in Array
+arr=[1,2,3,5,6]
+def find_missing(arr):
+    given_sum=sum(arr)
+    n=len(arr)+1
+    actual_sum=n*(n+1)/2
+    print(actual_sum-given_sum)
+find_missing(arr)
+
+
+#Flatten Nested List
+l=[1,2,3,[2,3,2],3,[3,4,[3,4]]]
+def flatten(l):
+    res=[]
+    stack=l[:]
+    while stack:
+        item=stack.pop(0)
+        if isinstance(item,list):
+            stack = item + stack
+        else:
+            res.append(item)
+    return res
+print(flatten(l))
