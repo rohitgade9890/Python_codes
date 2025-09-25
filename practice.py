@@ -71,3 +71,15 @@ def reverser(s):
         end -= 1
     return ' '.join(ls)
 print(reverser(s))
+
+#Count Substrings
+string='rohit arun garude'
+substring='ru'
+def cnt_substring(s,s1):
+    max_len=len(s1)
+    cnt=0
+    for x in range(len(s)):
+        if s[x:x+max_len]==s1:
+            cnt += 1
+    return cnt
+print(cnt_substring(string,substring))
