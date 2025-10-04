@@ -147,3 +147,54 @@ def rearrange(arr):
             neg_index += 1
     return arr
 print(rearrange(arr))
+
+
+#find leaders of array
+arr=[2,7,4,1,5,8]
+#leader = no element from right should be greter than that number
+def leaders(arr):
+    res=[]
+    maxx=float('-inf')
+    for x in range(len(arr)-1,-1,-1):
+        if arr[x] > maxx:
+            res.append(arr[x])
+        maxx = arr[x]
+    return res
+print(leaders(arr))
+
+#longest consecutive sequence
+arr=[1,6,3,2,101,9,102,99,100,100]
+def longest_sequece(arr):
+    arr.sort()
+    cnt=1
+    max_cnt=1
+    last_ele=arr[0]
+    for x in range(1,len(arr)):
+        if arr[x] - last_ele == 1:
+            cnt += 1
+        else:
+            cnt = 1
+        max_cnt=max(max_cnt,cnt)
+        last_ele=arr[x]
+    return max_cnt
+
+print(longest_sequece(arr))
+
+arr=[1,6,3,2,101,9,100,102,99,100,102,100]
+def longest_sequence(arr):
+    arr.sort()
+    cnt = 1
+    max_cnt = 1
+    last = arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] == last:
+            continue
+        if arr[i] == last + 1:
+            cnt += 1
+        else:
+            cnt = 1
+        max_cnt = max(max_cnt, cnt)
+        last = arr[i]
+    return max_cnt
+
+print(longest_sequence(arr))
