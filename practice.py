@@ -108,3 +108,19 @@ def flatten(l):
             res.append(item)
     return res
 print(flatten(l))
+
+
+
+#best time to buy and sell stocks
+stocks=[2,7,4,1,5,8]
+
+def buy_sell(arr):
+    min_price=arr[0]
+    max_profit=float('-inf')
+    for x in range(1,len(arr)):
+        profit=arr[x]-min_price
+        if profit > max_profit:
+            max_profit = profit
+        min_price=min(min_price,arr[x])
+    return max_profit
+print(buy_sell(stocks))
