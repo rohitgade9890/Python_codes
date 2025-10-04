@@ -124,3 +124,26 @@ def buy_sell(arr):
         min_price=min(min_price,arr[x])
     return max_profit
 print(buy_sell(stocks))
+
+
+#rearrange the array by signs
+arr=[2,2,-3,1,-9,2,-7,-9]
+def rearrange(arr):
+    pos=[]
+    neg=[]
+    pos_index=0
+    neg_index=0
+    for num in arr:
+        if num > 0:
+            pos.append(num)
+        else:
+            neg.append(num)
+    for x in range(len(arr)):
+        if x % 2 == 0:
+            arr[x] = pos[pos_index]
+            pos_index += 1
+        else:
+            arr[x] = neg[neg_index]
+            neg_index += 1
+    return arr
+print(rearrange(arr))
